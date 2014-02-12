@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Publications of Yang Laboratory at ION
+{% endblock %}
+
+{% block body %}
+{% for paper in publications %}
+
+  <div class="row {% if loop.first %}first-row{% endif %}">
+
+    <div class="col-md-6"> 
+      <div class="media">
+        <div class="media-body">
+          <p>
+            {{paper.authors}}. {{paper.title}}.
+             <b>{{paper.journal}}</b> {{paper.vol}}{%
+            if paper.issue %}&nbsp;({{paper.issue}}){% endif %}{% if
+            paper.pages %} {{paper.pages}}{% endif %}, {{paper.year}}.
+            {{paper.postscript}} 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endfor %}
+
+{% endblock %}

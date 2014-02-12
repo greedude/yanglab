@@ -1,0 +1,25 @@
+<header id="header-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="lab-name">
+        <h1><em>Yang</em> Laboratory</h1>
+        <h2>at Institue of Neuroscience</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <ul class="nav nav-tabs">
+          <li {% if tab == 'index' %}class="active"{% endif %}>
+            <a href="/">Home</a>
+          </li>
+          <li {% if tab == 'people' %}class="active"{% endif %}>
+            <a href="/people/">People</a>
+          </li>
+          <li {% if tab == 'publications' %}class="active"{% endif %}>
+            <a href="/publications/">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
