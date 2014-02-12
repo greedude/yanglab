@@ -1,3 +1,3 @@
 yanglab
 =======
-Lab website @ www.yanglaborary.com
+Lab website @ www.yanglaboratory.com
